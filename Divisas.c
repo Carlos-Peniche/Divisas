@@ -14,7 +14,7 @@ int main(){
 
 while(1){
 	
-printf ("Ingresa el Monto en MXN a convertir \n ");
+printf ("Ingresa el Monto independiente a la Divisa a convertir \n ");
 scanf("%d", &Monto);
 printf(" Tipo de conversion ");
 
@@ -23,7 +23,11 @@ printf("------------------------ $ \n"
 "1.- Convertir Pesos Mxn a Dolares Americanos \n" 
 "2.- Convertir Pesos Mxn a Dolares Canadienses \n" 
 "3.- Convertir Pesos Mxn a Euros \n" 
-"4.- Convertir Pesos Mxn a Libras Esterlinas \n ");
+"4.- Convertir Pesos Mxn a Libras Esterlinas \n"
+"5.- Convertir Dolares Americanos a Pesos Mexicanos\n"
+"6.- Convertir Dolares Canadienses a Pesos Mexicanos\n"
+"7.- Convertir Euros a Pesos Mexicanos\n"
+"8.- Convertir Libras Esterlinas a Pesos Mexicanos\n");
 
 scanf("%d", &Conversion);
 
@@ -45,6 +49,26 @@ printf("El Resultado de %d * %f = %0.2f Euros \n",Monto,Euro,Monto*Euro);
     break;
 case 4:
 printf("El Resultado de %d * %f = %0.2f Libras \n",Monto,Libra,Monto*Libra);
+//1 Peso = 0.036 Libras 
+    break;
+ 
+ case 5:
+printf("El Resultado de %d / %f = %0.2f Pesos MXN \n",Monto,PesoDolarA,Monto/PesoDolarA);
+//1 Peso = 0.050 Dolares Americanos
+    break;
+    
+case 6:
+printf("El Resultado de %d / %f = %0.2f Pesos MXN \n",Monto,PesoDolarC,Monto*PesoDolarC);
+//1 Peso = 0.063 Dolares Canadienses
+    break;
+    
+case 7:
+printf("El Resultado de %d / %f = %0.2f Pesos MXN \n",Monto,Euro,Monto/Euro);
+//1 Peso = 0.042 Euros 
+    break;
+    
+case 8:
+printf("El Resultado de %d / %f = %0.2f Pesos MXN \n",Monto,Libra,Monto/Libra);
 //1 Peso = 0.036 Libras 
     break;
     
